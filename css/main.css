@@ -1,7 +1,9 @@
-body {
+* {
   box-sizing: border-box;
-  background-color: #d6e0d7;
-  font-size: 14px;
+}
+body {
+  background-color: #ece4e9;
+  font-size: 13px;
   font-family: 'Poppins', sans-serif;
   line-height: 1.2;
   letter-spacing: 0.05em;
@@ -9,7 +11,8 @@ body {
 .sidebar {
   position: absolute;
   left: 0;
-  width: 350px;
+  width: 270px;
+  margin: 0 30px;
 }
 .projects {
   position: relative;
@@ -45,8 +48,97 @@ body {
   font-size: 35px;
   font-weight: 300;
 }
+.sidebar__teams::before,
+.sidebar__teams::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50%;
+  margin: 15px 0;
+  background: rgba(161,163,183,0.4);
+}
+.sidebar__teams {
+  margin: 35px 0;
+  padding: 15px 0;
+}
+.sidebar__teams__goback {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+}
+.sidebar__teams__goback a {
+  text-decoration: none;
+  color: #a1a3b7;
+}
 .sidebar__teams--selected {
   color: #f36161;
   font-weight: 600;
   font-size: 19px;
+  margin: 10px 0;
+}
+.navigation__list {
+  list-style: none;
+  padding: 0;
+}
+.navigation__list__item {
+  margin: 17px 0;
+  display: flex;
+  align-items: center;
+}
+.navigation__list__item__container {
+  padding: 10px;
+  background-color: rgba(247,246,251,0.6);
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  margin-right: 10px;
+}
+.navigation__list__item__container__icon {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.navigation__list__item a {
+  text-decoration: none;
+  color: rgba(38,39,44,0.6);
+  font-weight: 600;
+}
+.navigation__list__item:hover > .navigation__list__item__container {
+  background-color: #fff;
+}
+.navigation__list__item:hover a {
+  color: #26272c;
+}
+.topbar {
+  background: linear-gradient(to right, #f36161 0%, rgba(253,132,119,0.83) 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: -1px 10px 12px -9px #a7a1aa;
+}
+.topbar__user {
+  margin-right: 21px;
+}
+.topbar__user__avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+.topbar p {
+  text-transform: uppercase;
+  color: #fbeae8;
+  font-size: 11px;
+}
+.topbar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.vertical-line {
+  border-left: 1px solid rgba(243,176,172,0.6);
+  height: 55px;
 }

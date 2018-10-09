@@ -11,30 +11,40 @@
     <aside class="sidebar">
         <div class="sidebar__brand">
             <img src="./img/pigeon.png" alt="Pigeon App logo">
-            <h1>pigeon</h1>
         </div>
 
         <div class="sidebar__teams">
-            <a href="#">Teams</a>
+            <div class="sidebar__teams__goback">
+                <a href="#"><img src="./img/left-arrow.png"></a> 
+                <a href="#">Teams</a>
+            </div>
             <p class="sidebar__teams--selected">X League</p>
         </div>
 
         <div class="sidebar__navigation">
             <ul class="navigation__list">
                 <li class="navigation__list__item">
-                    <img src="./img/archive.png" alt="Projects icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/archive.png" alt="Projects icon" class="navigation__list__item__container__icon">
+                    </div>
                     <a href="">Projects</a>
                 </li>
-                <li class="navigation__list__item">
-                    <img src="./img/profile.png" alt="Members icon">
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/profile.png" alt="Members icon" class="navigation__list__item__container__icon">
+                    </div>
                     <a href="">Members</a>
                 </li>
-                <li class="navigation__list__item">
-                    <img src="./img/invoice.png" alt="Billing icon">
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/invoice.png" alt="Billing icon" class="navigation__list__item__container__icon">
+                    </div>
                     <a href="">Billing</a>
                 </li>
-                <li class="navigation__list__item">
-                    <img src="./img/settings.png" alt="Settings icon">
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/settings.png" alt="Settings icon" class="navigation__list__item__container__icon">
+                    </div>
                     <a href="">Settings</a>
                 </li>
             </ul>
@@ -56,14 +66,14 @@
             <p>Project</p>
             <a href="">All projects</a>
         </div>
-
+        <div class="vertical-line"></div>
         <div class="topbar__teams">
             <p>Team</p>
             <a href="">X League</a>
         </div>
-
+        <div class="vertical-line"></div>
         <div class="topbar__user">
-            <img src="" alt="" class="topbar__user__avatar">
+            <img src="./img/avatar.jpeg" alt="" class="topbar__user__avatar">
         </div>
     </section>
 </body>
